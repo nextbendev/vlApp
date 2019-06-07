@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Victory</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+		  <h1 class="logo">Logo</h1>
+	</header>
+
+  <nav>
+  			<ul>
+				    <li class="nav-item"><a href="#" >Home</a></li>
+				    <li class="nav-item"><a href="#" >Blog</a></li>
+				    <li class="nav-item"><a href="#">About</a></li>
+    				<li class="nav-item"><a href="#" >Contact</a></li>
+			  </ul>
+				  <div class="menu-bar">Menu
+					    <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+			  </div>
+		</nav>
+
+
+    <%= yield %>
+  </body>
+</html>
